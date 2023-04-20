@@ -1,0 +1,48 @@
+// Write your overrides
+.top-view-step {
+  margin-top: -15px;
+}
+.bottom-view-step {
+  margin-top: 15px;
+}
+.shepherd-content {
+  .shepherd-header {
+    h3 {
+      display: flex;
+      justify-content: center;
+      font-weight: bold;
+    }
+  }
+  .shepherd-text {
+    padding: 20px;
+    text-align: center;
+
+    b {
+      font-weight: 500;
+      font-size: small;
+    }
+    p {
+      font-weight: 400;
+    }
+  }
+  .shepherd-footer {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.waviy {
+  position: relative;
+}
+.waviy span {
+  position: relative;
+  display: inline-block;
+  animation: flip 2s infinite;
+  animation-delay: calc(0.2s * var(--i));
+}
+@keyframes flip {
+  0%,
+  80% {
+    transform: rotateY(360deg);
+  }
+}
